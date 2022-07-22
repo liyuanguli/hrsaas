@@ -1,5 +1,7 @@
 <template>
-  <div />
+  <div>
+    暂无社保页面，待续....
+  </div>
 </template>
 
 <script>

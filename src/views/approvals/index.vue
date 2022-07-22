@@ -1,5 +1,7 @@
 <template>
-  <div />
+  <div>
+    暂无审批页面，待续....
+  </div>
 </template>
 
 <script>
