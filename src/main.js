@@ -12,6 +12,7 @@ import App from './App'
 import store from './store'
 import router from './router'
 import Components from '@/components'
+import CheckPermission from '@/mixin/checkPermission'
 
 import * as directives from '@/directives'
 import * as filters from '@/filters' // 引入工具类
@@ -31,6 +32,8 @@ Object.keys(filters).forEach(key => {
   // 注册过滤器
   Vue.filter(key, filters[key])
 })
+// 全局混入检查对象
+Vue.mixin(CheckPermission)
 Vue.config.productionTip = false
 // 注册自定义组件
 Vue.use(Components)
